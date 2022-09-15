@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+            <h1>Student Registration</h1>
+            <form action="forms.php" method="GET" id="form1">
+
+                <!--input element (text)  -->
+                Name : <input type="text" placeholder="Name" /><br><br>
+                
+                <!-- input element (radio) -->
+                Course :
+                <label for="diploma">
+                  <input type="radio" valve="Diploma" name="course" id="diploma"/>Diploma
+                </label>
+                <label for="btech">
+                  <input type="radio" valve="B.Tech" name="course" id="btech"/>B.tech
+                </label>
+                <label for="mtech">
+                  <input type="radio" valve="M.Tech" name="course" id="mtech"/>M.tech
+                </label>
+                <label for="phd">
+                  <input type="radio" valve="PHD" name="course" id="phd"/>PHD
+                </label><br><br>
+                
+                <!-- input element (checkbox) -->
+                Language : 
+                <input type="checkbox" name="English" id="english">
+                <label for="english">English</label>
+                <input type="checkbox" name="Hindi" id="hindi">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" name="Marathi" id="marathi">
+                <label for="marathi">Marathi</label><br><br>
+                
+                <!-- textarea element -->
+                Introduction :<br>
+                <textarea name="Intro" id="intro" cols="40" rows="5" placeholder="Give short Introduction"></textarea><br><br>
+
+                <!-- select element -->
+                Batch : 
+                <select name="Batchof" id="Batchof" >
+                  <option value="Year">Year</option>
+                  <option value="2020-2024">2020-2024</option>
+                  <option value="2019-2023">2019-2023</option>
+                  <option value="2018-2022">2018-2022</option>
+                  <option value="2017-2021">2017-2021</option>
+                </select><br><br>
+
+                <!-- input element (submit) -->
+                <input type="submit" valve="Submit">
+            </form>
+        </div> 
+      </section>
+    </main>
+  </body>
+</html>
